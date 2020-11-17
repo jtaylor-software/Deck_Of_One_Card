@@ -14,6 +14,8 @@
 		8FC5D241256475B600825906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5D240256475B600825906 /* Assets.xcassets */; };
 		8FC5D244256475B600825906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5D242256475B600825906 /* LaunchScreen.storyboard */; };
 		8FC5D2532564776600825906 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5D2522564776600825906 /* Card.swift */; };
+		8FC5D2592564786B00825906 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5D2582564786B00825906 /* CardController.swift */; };
+		8FC5D25E256478DF00825906 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5D25D256478DF00825906 /* CardError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8FC5D243256475B600825906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC5D245256475B600825906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC5D2522564776600825906 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8FC5D2582564786B00825906 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		8FC5D25D256478DF00825906 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		8FC5D236256475B500825906 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				8FC5D25C256478C500825906 /* Helpers */,
 				8FC5D2572564780A00825906 /* Model Controllers */,
 				8FC5D24C256476DF00825906 /* Resources */,
 				8FC5D24F2564770600825906 /* View Controllers */,
@@ -106,8 +111,17 @@
 		8FC5D2572564780A00825906 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8FC5D2582564786B00825906 /* CardController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		8FC5D25C256478C500825906 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FC5D25D256478DF00825906 /* CardError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC5D2592564786B00825906 /* CardController.swift in Sources */,
 				8FC5D23C256475B500825906 /* ViewController.swift in Sources */,
+				8FC5D25E256478DF00825906 /* CardError.swift in Sources */,
 				8FC5D238256475B500825906 /* AppDelegate.swift in Sources */,
 				8FC5D23A256475B500825906 /* SceneDelegate.swift in Sources */,
 				8FC5D2532564776600825906 /* Card.swift in Sources */,
